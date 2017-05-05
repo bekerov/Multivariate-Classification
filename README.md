@@ -29,13 +29,13 @@ generates a train.csv in same folder containg `dicom_path, groundtruth_path`
 
 Train ROC             |  Train Confusion matrix
 :-------------------------:|:-------------------------:
-![](sample_result/68.png)  |  ![](sample_result/test_conf.png)
+![](sample_result/test_roc.png)  |  ![](sample_result/test_conf.png)
 
 2. Performance of model on `test set`,
 
 Test ROC             |  Test Confusion matrix
 :-------------------------:|:-------------------------:
-![](sample_result/68.png)  |  ![](sample_result/train_conf.png)
+![](sample_result/train_roc.png)  |  ![](sample_result/train_conf.png)
 
 
 
