@@ -123,7 +123,7 @@ if __name__ == '__main__':
 
     # create and fit the LSTM network
     model = Sequential()
-    model.add(LSTM(128, input_dim=14, input_length=89, return_sequences=True))
+    model.add(LSTM(128, input_dim=num_var, input_length=win_size, return_sequences=True))
     model.add(Dropout(0.2))
     model.add(LSTM(128, return_sequences=False))
     model.add(Dropout(0.2))

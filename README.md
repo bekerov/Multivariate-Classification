@@ -13,11 +13,12 @@ Multivariate Time Series  Classification Using LSTM
 
 **Method Overview :** I have used Keras framework and an LSTM Network to design the model
 **Train-Test Data Generation**
-
+  `win_size = 89` represents time series size.   `num_var = 14` represents the feature vector size. Based no this I extract `segments`of  `89*14` array. FUrtherr, we feed this time series to LSTM sequntially.
  **Model Sumary**
 ![](sample_result/modelSummary.png) 
 
  **Parameter setting**
+  `split_ratio = 0.8`
 `learning rate=0.001`
 `nb_epoch=50`
 `batch_size=64`
@@ -37,6 +38,5 @@ Test ROC             |  Test Confusion matrix
 ![](sample_result/train_roc.png)  |  ![](sample_result/train_conf.png)
 
 
- 
- **Parameter Setting:** The following changes can be done to adjust the paraeters.
+
  
