@@ -29,13 +29,13 @@ Multivariate Time Series  Classification Using LSTM
 
 1. Performance of model on `test set`,
 
-Train ROC             |  Train Confusion matrix
+Test ROC             |  Test Confusion matrix
 :-------------------------:|:-------------------------:
 ![](sample_result/test_roc.png)  |  ![](sample_result/test_conf.png)
 
 2. Performance of model on `train set`,
 
-Test ROC             |  Test Confusion matrix
+Train ROC             |  Train Confusion matrix
 :-------------------------:|:-------------------------:
 ![](sample_result/train_roc.png)  |  ![](sample_result/train_conf.png)
 
