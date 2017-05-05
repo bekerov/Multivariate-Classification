@@ -4,6 +4,7 @@ Multivariate Time Series  Classification Using LSTM
 ### Multivariate Time Series Classification using LSTM - Keras 
 
 **How to Run:**  `main.py` and `Multi-variate-Time-series-Data.xlsx` need to be on the same folder. The script will create four images
+
 **dataset Stats:**
 `Multi-variate-Time-series-Data.xlsx`
 - Total Number of Time Series : 205
@@ -14,7 +15,8 @@ Multivariate Time Series  Classification Using LSTM
 **Method Overview :** I have used Keras framework and an LSTM Network to design the model
 **Train-Test Data Generation**
   `win_size = 89` represents time series size.   `num_var = 14` represents the feature vector size. Based no this I extract `segments`of  `89*14` array. FUrtherr, we feed this time series to LSTM sequntially.
- **Model Sumary**
+
+**Model Sumary**
 ![](sample_result/modelSummary.png) 
 
  **Parameter setting**
