@@ -135,7 +135,7 @@ if __name__ == '__main__':
     model.summary()
 
     # Fit the network
-    model.fit(train_x, train_y, nb_epoch=50, batch_size=64,
+    model.fit(train_x, train_y, nb_epoch=48, batch_size=149,
               verbose=2, validation_split=0.1)
 
     # Predict Test Data and Plot ROC
