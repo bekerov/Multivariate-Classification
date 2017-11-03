@@ -87,7 +87,7 @@ def extract_segments(data, window_size):
     labels = np.empty((0))
     for (start, end) in windows(data, window_size):
         if (len(data.ix[start:end]) == (window_size)):
-            signal = data.ix[start:end][range(2, 16)]
+            signal = np.asarray(data.ix[start:end])[:,2:16]
             if segments is None:
                 segments = signal
             else:
@@ -111,7 +111,7 @@ if __name__ == '__main__':
     segments, labels = extract_segments(data, win_size)
     labels = np.asarray(pd.get_dummies(labels), dtype=np.int8)
     reshaped_segments = segments.reshape(
-        [len(segments) / (win_size), (win_size), num_var])
+        [int(len(segments) / (win_size)), (win_size), num_var])
 
     """Create Train and Test Split based on split ratio"""
 
